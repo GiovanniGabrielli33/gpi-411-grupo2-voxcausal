@@ -9,7 +9,7 @@ Repositorio oficial del **Grupo 2 – Sección 411** de la cátedra **Gestión d
 | Docente | Dr. Oscar Magna Veloso |
 | Integrantes | Giovanni Gabrielli · Martín Vera · Aylin Strajilevich · Cristóbal Muñoz |
 | Dictamen | **GO condicionado** (VAN después de impuestos US$ 366.751 · TIR 91,9 % · Payback 1,82 años · B/C 1,54) |
-| Drive de la Parte 1 | Carpeta `/GPI-Taller Arquitectura/`: _[pegar link]_ |
+| Drive de la Parte 1 | Carpeta `/GPI-Taller Arquitectura/`: https://drive.google.com/drive/folders/18HAemgvuCRbLo8SWjQS0V514eCEYORqd?usp=drive_link |
 
 ## Estructura
 
