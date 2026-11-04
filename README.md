@@ -29,7 +29,7 @@ Repositorio oficial del **Grupo 2 – Sección 411** de la cátedra **Gestión d
 
 | Métrica | Meta | Valor medido en el prototipo |
 |---|---|---|
-| Error de ATE (efecto real 8 pp, 200.000 llamadas sintéticas) | ≤ 0,05 | 0,0009 con ajuste backdoor (0,070 sin ajuste) |
+| Error de ATE (efecto real 8 pp, 200.000 llamadas sintéticas) | ≤ 0,05 | 0,0009 con ajuste backdoor (0,071 sin ajuste) |
 | Latencia p95 (presupuesto por tramo) | < 250 ms | 175 ms |
 | Cobertura de pruebas (líneas y ramas) | ≥ 80 % | 100 % |
 | Deuda técnica (método SQALE, estimada con ruff y pylint) | ≤ 4 h por incremento | 0,3–1,5 h, rating A |
