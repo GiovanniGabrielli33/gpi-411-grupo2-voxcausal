@@ -20,15 +20,32 @@ Repositorio oficial del **Grupo 2 – Sección 411** de la cátedra **Gestión d
 │   │   └── figuras/    Gráficos de costos, flujo de caja, sensibilidad, latencia y ahorro
 │   ├── arquitectura/   Diagramas C4 niveles 1, 2 y 3 y pipeline MLOps
 │   └── gestion/        Curva S y cuadrante de desempeño EVM
-├── src/                Código de la solución (se incorpora si el dictamen es GO)
-└── tests/              Pruebas (se incorporan si el dictamen es GO)
+├── src/voxcausal/      Prototipo del núcleo (motor causal, guardián de latencia, filtro PII, ventaneo, política D4)
+├── tests/              28 pruebas pytest
+└── pyproject.toml      Dependencias y configuración de pytest-cov y ruff
+```
+
+## Métricas de calidad (ISO/IEC 25010, Informe ERV sección 2.3)
+
+| Métrica | Meta | Valor medido en el prototipo |
+|---|---|---|
+| Error de ATE (efecto real 8 pp, 200.000 llamadas sintéticas) | ≤ 0,05 | 0,0009 con ajuste backdoor (0,070 sin ajuste) |
+| Latencia p95 (presupuesto por tramo) | < 250 ms | 175 ms |
+| Cobertura de pruebas (líneas y ramas) | ≥ 80 % | 100 % |
+| Deuda técnica (método SQALE, estimada con ruff y pylint) | ≤ 4 h por incremento | 0,3–1,5 h, rating A |
+
+Para reproducirlas:
+
+```bash
+pip install -e ".[dev]"
+pytest
 ```
 
 ## Flujo de trabajo
 
 - `main`: versión entregada.
-- `feature/erv`: desarrollo del Informe ERV; se integra a `main` mediante pull request revisado por otro integrante.
+- `feature/*`: desarrollo; cada rama se integra a `main` mediante pull request revisado por otro integrante (PR #1 informe, PR #2 prototipo).
 
 ## Uso de IA
 
-Los diagramas, gráficos y cálculos se elaboraron con asistencia de IA generativa (Claude Opus, Anthropic) y fueron revisados por el equipo. Cada figura indica su fuente.
+Los diagramas, gráficos, cálculos y el prototipo se elaboraron con asistencia de IA generativa (Claude Opus, Anthropic) y fueron revisados por el equipo. Cada figura indica su fuente.

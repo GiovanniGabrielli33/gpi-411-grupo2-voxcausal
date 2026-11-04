@@ -1,5 +1,5 @@
 # tests
 
-Pruebas unitarias, de integración, de carga (1.500 llamadas concurrentes) y de seguridad.
+28 pruebas unitarias pytest sobre `src/voxcausal`, con cobertura de 100 % de líneas y ramas (`pytest` la reporta al correr).
 
-Se incorporan junto con `src/`. Metas: cobertura ≥ 80 %, deuda técnica ≤ 4 h (SonarQube).
+Las pruebas de integración, de carga (1.500 llamadas concurrentes) y de contrato gRPC/REST se agregan en la fase 1.
