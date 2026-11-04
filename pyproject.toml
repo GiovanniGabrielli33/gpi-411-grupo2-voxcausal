@@ -1,0 +1,18 @@
+[project]
+name = "voxcausal"
+version = "0.1.0"
+description = "Prototipo del núcleo de Vox-Causal AI (GPI 2026-II, Sección 411, Grupo 2)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "radon>=6"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "--cov=voxcausal --cov-branch --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
