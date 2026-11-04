@@ -2,3 +2,8 @@
 *.tmp
 .DS_Store
 Thumbs.db
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+*.egg-info/
